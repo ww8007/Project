@@ -18,7 +18,8 @@
 
 ### 핀 연결도
 ![pinout](https://user-images.githubusercontent.com/54137044/102230294-0cc2b880-3f30-11eb-98dd-153c1373554e.png)
-
+### Labview 코드 캡쳐
+![codecapture](https://user-images.githubusercontent.com/54137044/102230578-675c1480-3f30-11eb-8db9-5ef5bde07d57.png)
 ### 보완사항
     지금 센서의 값이 너무 계속 바뀌어서 바뀌는 값에 대한 모터 제어가 완벽하지 않다.
     모터의 동작 속도를 조금 더 완만하게 바꾸고 싶은데 D 제어를 하면 모터가 진동을 해서 방안을 찾고 있다.
