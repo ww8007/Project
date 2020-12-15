@@ -17,7 +17,7 @@
     xang = 0.98*(xang+gyroxdata*dt)+0.02(accdatax)
 
 ### 핀 연결도
-    ![pinout](https://user-images.githubusercontent.com/54137044/102230294-0cc2b880-3f30-11eb-98dd-153c1373554e.png)
+![pinout](https://user-images.githubusercontent.com/54137044/102230294-0cc2b880-3f30-11eb-98dd-153c1373554e.png)
 
 ### 보완사항
     지금 센서의 값이 너무 계속 바뀌어서 바뀌는 값에 대한 모터 제어가 완벽하지 않다.
