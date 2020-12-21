@@ -1,5 +1,5 @@
 import win32com.client
- 
+
 # 연결 여부 체크
 objCpCybos = win32com.client.Dispatch("CpUtil.CpCybos")
 bConnect = objCpCybos.IsConnect
@@ -48,9 +48,9 @@ print("예상체결가", exPrice)
 print("예상체결가 대비", exDiff)
 print("예상체결수량", exVol)
 
-from slacker import Slacker
 
-slack = Slacker('xoxb-1591360129827-1591367436083-yflIuTGzyzCf1PFm8Q3wFZSs')
+from slacker import Slacker
+slack = Slacker('xoxb-1591360129827-1591367436083-GmvaDAwstjTb4XESGeu5ouvG')
 
 # Send a message to #general channel
 slack.chat.post_message('#stock', '삼성전가 현재가 :' + str(offer))
