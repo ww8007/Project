@@ -6,12 +6,12 @@ from slacker import Slacker
 import time, calendar
 
 
-slack = Slacker('xoxb-1591360129827-1591367436083-yflIuTGzyzCf1PFm8Q3wFZSs')
+slack = Slacker('xoxb-1591360129827-1591367436083-GmvaDAwstjTb4XESGeu5ouvG')
 def dbgout(message):
     """인자로 받은 문자열을 파이썬 셸과 슬랙으로 동시에 출력한다."""
     print(datetime.now().strftime('[%m/%d %H:%M:%S]'), message)
     strbuf = datetime.now().strftime('[%m/%d %H:%M:%S] ') + message
-    slack.chat.post_message('#stock', strbuf)
+    slack.chat.post_message('#stock', (strbuf))
 
 def printlog(message, *args):
     """인자로 받은 문자열을 파이썬 셸에 출력한다."""
@@ -248,7 +248,7 @@ if __name__ == '__main__':
              'A280940', 'A261220', 'A217770', 'A295000', 'A176950']
         bought_list = []     # 매수 완료된 종목 리스트
         target_buy_count = 5 # 매수할 종목 수
-        buy_percent = 0.19   
+        buy_percent = 0.25   
         printlog('check_creon_system() :', check_creon_system())  # 크레온 접속 점검
         stocks = get_stock_balance('ALL')      # 보유한 모든 종목 조회
         total_cash = int(get_current_cash())   # 100% 증거금 주문 가능 금액 조회
